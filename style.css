@@ -1,5 +1,5 @@
 :root {
-    --red: #F63263;
+    --red: #F63232;
     --yellow: #feb614;
     --gray: #f4f4f4;
 
@@ -20,6 +20,9 @@ header {
     background-color: var(--red);
     text-align: center;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 header > h1 {
@@ -45,3 +48,70 @@ header > h1 {
     background: var(--yellow);
     padding: 2rem;
 }
+
+.banner h1 span {
+    font-size: 5rem;
+}
+
+/*Nav menu*/
+
+nav {
+    background: var(--gray);
+    margin-top: -3px;
+}
+
+nav > ul {
+    
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    width: 24%;
+    padding: 1rem;
+}
+
+nav a {
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: red;
+}
+
+/* main */
+main {
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--red);
+}
+
+main p {
+    line-height: 2;
+}
+
+main ul {
+    white-space: nowrap;
+    width: 100%;
+}
+
+main li {
+    display: inline-block;
+    width: 50%;
+    transition: transform o.3s ease;
+}
+
+main li:hover {
+    transform: scale(1.1);
+}
+
+main img {
+    width: 100%;
+}
+
