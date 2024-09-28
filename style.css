@@ -1,0 +1,47 @@
+:root {
+    --red: #F63263;
+    --yellow: #feb614;
+    --gray: #f4f4f4;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--red);
+    text-align: center;
+    padding: 1rem;
+}
+
+header > h1 {
+    
+    color: #f4f4f4;
+    display: inline-block;
+    border: 8px solid white;
+    padding: .5rem;
+    border-radius: 50px;
+}
+
+.banner {
+    position: relative;
+}
+.banner img {
+    width:100%;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    background: var(--yellow);
+    padding: 2rem;
+}
