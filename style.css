@@ -133,7 +133,7 @@ main img {
     margin-bottom: 1rem;
 }
 
-.join input [type="email"] {
+.join input[type="email"] {
     border: none;
     padding: 1rem;
     border-radius: 50px;
@@ -206,5 +206,13 @@ footer {
         display: block;
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    .join h2 {
+        font-size: 2rem;
+    }
+
+    .join input[type="email"] {
+        width: 100%;
     }
 }
