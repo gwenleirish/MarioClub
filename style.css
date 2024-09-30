@@ -58,10 +58,11 @@ header > h1 {
 nav {
     background: var(--gray);
     margin-top: -3px;
+    position: sticky;
+    top: 100px;
 }
 
 nav > ul {
-    
     text-align: center;
 }
 nav li {
@@ -146,4 +147,54 @@ footer {
     background: var(--red);
     padding: 1rem;
     color: #f4f4f4;
+}
+
+@media (max-width: 750px){
+    .banner h1 {
+        font-size: 2rem;
+        top: 45%;
+    }
+    
+    .banner h1 > span {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    header {
+        position: static;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .banner h1 {
+        display: block;
+        position: static;
+        margin-top: -5px;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .banner h1 > span {
+        font-size: 1.5rem;
+    }
+
+    .banner h1 br {
+        display: none;   
+    }
+
+    nav {
+        top: 0;
+    }
+
+    nav ul > li {
+        display: block;
+        width: 100%;
+    }
+
 }
